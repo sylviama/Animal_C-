@@ -1,6 +1,7 @@
-bin/Debug
-obj/Debug
-.vscode/
+bin/Debug/netcoreapp1.0
+obj/Debug/netcoreapp1.0
+.vscode/launch.json
+.vscode/tasks.json
 project.json
 project.lock.json
 .DS_Store
