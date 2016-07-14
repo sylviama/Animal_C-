@@ -23,5 +23,20 @@ namespace zoo
         }
     }
 
+    public class Cat: Animal{
+        public string meow(){
+            return "meow";
+        }
+
+        public string meow(int number_of_pets){
+            if(number_of_pets<=0){
+                return this.meow();//"this" means class Cat?
+            }else{
+                return "meow, you've pet me!";
+            }
+        }
+
+    }
+
 
 }

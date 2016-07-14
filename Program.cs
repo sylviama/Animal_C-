@@ -16,6 +16,9 @@ namespace StartOOP
             Dog my_dog = new Dog();//bring a Dog to life
             Console.WriteLine("This Dog is: " +my_dog.sleep());
             Console.WriteLine("Dog dance: "+ my_dog.dance());
+            Cat my_cat= new Cat();
+            Console.WriteLine("cat meow with Integar:" + my_cat.meow(-3));
+            Console.WriteLine("Cat meow without: "+ my_cat.meow());
             Console.WriteLine("Ending Program...");
         }
     }
