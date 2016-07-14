@@ -1,5 +1,6 @@
-bin/
-obj/
+bin/Debug
+obj/Debug
 .vscode/
 project.json
 project.lock.json
+.DS_Store

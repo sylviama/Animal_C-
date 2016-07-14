@@ -12,8 +12,10 @@ namespace StartOOP
             my_animal.ToString();
             Console.WriteLine(my_animal.ToString());
             Console.WriteLine("The Animal is: " + my_animal.sleep());
+            Console.WriteLine("The Animal dance: "+ my_animal.dance());
             Dog my_dog = new Dog();//bring a Dog to life
             Console.WriteLine("This Dog is: " +my_dog.sleep());
+            Console.WriteLine("Dog dance: "+ my_dog.dance());
             Console.WriteLine("Ending Program...");
         }
     }
