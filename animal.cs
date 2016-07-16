@@ -14,13 +14,24 @@ namespace zoo
             return null;
         }
 
+        private string respiraton(){//private even cannot be used by its children
+            return "breath!";
+        }
+
+        protected string swim(){//protected could only be used inside of the family, not outside
+            return "swoosh";
+        }
+
     }
 
     public class Dog: Animal{//anything put into Animal, now inheritence to Dog
         //override is a keyword to override a parent function
         override public string dance(){
-            return "Rag-Top Don't Stop";
+            
+            return "Rag-Top Don't Stop "+this.swim();;
         }
+
+
     }
 
     public class Cat: Animal{
@@ -35,6 +46,14 @@ namespace zoo
             }else{
                 return "meow, you've pet me!";
             }
+        }
+
+        private string purr(){
+            return "purr!";
+        }
+
+        public string neowThenPurr(){
+            return this.meow()+" "+ this.purr();
         }
 
     }
